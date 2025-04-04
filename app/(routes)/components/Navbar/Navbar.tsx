@@ -1,7 +1,12 @@
-const Navbar = () => {
-  return (
-    <div>Navbar</div>
-  )
-}
+import { NavbarProps as Props } from './navbar.type';
 
-export default Navbar
+const Navbar = ({ user }: Props) => {
+  return (
+    <div>
+      Navbar
+      {user}
+    </div>
+  );
+};
+
+export default Navbar;

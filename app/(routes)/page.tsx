@@ -7,7 +7,7 @@ export default function Home() {
     <div>
       <Logo />
       <Button className='font-normal'>Hello world</Button>
-      <Navbar />
+      <Navbar user='hola' />
     </div>
   );
 }

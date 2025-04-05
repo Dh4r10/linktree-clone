@@ -11,9 +11,11 @@ export const metadata: Metadata = {
 
 const AuthLayout = ({ children }: Props) => {
   return (
-    <div className='grid grid-cols-2 h-screen'>
-      <div>{children}</div>
-      <div className='bg-cyan-200 w-full' />
+    <div className='h-screen grid grid-cols-1 lg:grid-cols-2'>
+      <div className='flex flex-col items-center justify-center'>
+        {children}
+      </div>
+      <div className="bg-[url('/img/background-login.png')] hidden bg-no-repeat bg-cover h-full w-full lg:block" />
     </div>
   );
 };

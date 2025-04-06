@@ -6,21 +6,21 @@ import './globals.css';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
-  subsets: ['latin'],
+  subsets: ['latin']
 });
 
 const geistMono = Geist_Mono({
   variable: '--font-geist-mono',
-  subsets: ['latin'],
+  subsets: ['latin']
 });
 
 export const metadata: Metadata = {
-  title: 'Linktree clone',
-  description: "Linktree's clone by dh4rio",
+  title: 'Dhatree',
+  description: "Linktree's clone by dh4rio"
 };
 
 export default function RootLayout({
-  children,
+  children
 }: Readonly<{
   children: React.ReactNode;
 }>) {

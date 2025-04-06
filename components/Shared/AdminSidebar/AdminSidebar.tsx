@@ -7,7 +7,7 @@ import {
   SidebarHeader,
   SidebarMenu,
   SidebarMenuButton,
-  SidebarMenuItem,
+  SidebarMenuItem
 } from '@/components/ui/sidebar';
 import { ChevronUp, TreePalm, User2 } from 'lucide-react';
 import { itemsSidebar } from './adminSidebar.data';
@@ -15,8 +15,8 @@ import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
-  DropdownMenuTrigger,
-} from '@radix-ui/react-dropdown-menu';
+  DropdownMenuTrigger
+} from '@/components/ui/dropdown-menu';
 
 const AdminSidebar = () => {
   return (
@@ -50,7 +50,7 @@ const AdminSidebar = () => {
           <SidebarMenuItem>
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
-                <SidebarMenuButton>
+                <SidebarMenuButton className='cursor-pointer'>
                   <User2 /> Username
                   <ChevronUp className='ml-auto' />
                 </SidebarMenuButton>
@@ -73,7 +73,6 @@ const AdminSidebar = () => {
           </SidebarMenuItem>
         </SidebarMenu>
       </SidebarFooter>
-
       <SidebarFooter />
     </Sidebar>
   );

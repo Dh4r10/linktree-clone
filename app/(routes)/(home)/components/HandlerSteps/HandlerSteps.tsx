@@ -5,7 +5,7 @@ import {
   AlertDialogContent,
   AlertDialogDescription,
   AlertDialogHeader,
-  AlertDialogTitle,
+  AlertDialogTitle
 } from '@/components/ui/alert-dialog';
 import { useStepConfig } from '@/hooks/useStepConfig';
 import { Button } from '@/components/ui/button';
@@ -14,6 +14,7 @@ import { Progress } from '@/components/ui/progress';
 import StepOne from './Steps/StepOne';
 import StepTwo from './Steps/StepTwo';
 import StepThree from './Steps/StepThree';
+import StepFour from './Steps/StepFour';
 
 const HandlerSteps = ({ onReload }: Props) => {
   const { totalSteps, step, prevStep, infoUser } = useStepConfig();
@@ -49,7 +50,7 @@ const HandlerSteps = ({ onReload }: Props) => {
               {step === 1 && <StepOne />}
               {step === 2 && <StepTwo />}
               {step === 3 && <StepThree />}
-              {step === 4 && <p>Step four</p>}
+              {step === 4 && <StepFour />}
               {step === 5 && <p>Step five</p>}
             </div>
           </AlertDialogDescription>
